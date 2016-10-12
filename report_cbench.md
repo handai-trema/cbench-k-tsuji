@@ -8,7 +8,9 @@ Submission: Oct./12/2016
 
 ##手法
 下記の３つの操作を行うことで，  
-プロファイルを取得した．  
+プロファイル
+[プロファイル結果はこちら] (https://raw.githubusercontent.com/handai-trema/cbench-k-tsuji/master/profile_cbench.txt)
+を取得した．  
 
 ###① Cbenchの起動およびプロファイリング  
 まず，端末１上でcbench-k-tsujiリポジトリにおいて，  
