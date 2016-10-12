@@ -11,7 +11,7 @@ Submission: Oct./12/2016
 そして，IO.selectにかかる時間が最も長いため，  
 IO.selectがボトルネックである.  
 
-|  %   cumulative   self              self     total|
+|     cumulative   self              self     total|
 | time   seconds   seconds    calls  ms/call  ms/call  name|
 |:------------------------------------------------------------------:|
 |190.42   257.75    257.75        2 128875.00 128875.00  IO.select|
@@ -28,4 +28,4 @@ IO.selectがボトルネックである.
 
 
 ##関連リンク
-* [lib/cbench.rb] (https://github.com/handai-trema/cbench-k-tsuji/blob/master/lib/cbench.rb)
+* [Result of profile] (https://github.com/handai-trema/cbench-k-tsuji/blob/master/profile_cbench.txt)
