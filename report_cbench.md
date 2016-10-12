@@ -11,10 +11,10 @@ Submission: Oct./12/2016
 そして，IO.selectにかかる時間が最も長いため，  
 IO.selectがボトルネックである.  
 
-|  %   cumulative   self              self     total|  
-| time   seconds   seconds    calls  ms/call  ms/call  name|  
+|  %   cumulative   self              self     total|
+| time   seconds   seconds    calls  ms/call  ms/call  name|
 |:------------------------------------------------------------------:|
-|190.42   257.75    257.75        2 128875.00 128875.00  IO.select|  
+|190.42   257.75    257.75        2 128875.00 128875.00  IO.select|
 
  95.26   386.70    128.95        2 64475.00 64475.00  Thread#join  
  95.21   515.58    128.88        2 64440.00 64440.00  TCPServer#accept  
