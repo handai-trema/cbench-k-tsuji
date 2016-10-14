@@ -10,7 +10,7 @@ Branch:     Master
 
 
 
-##手法
+##実施内容
 下記の３つの操作を行うことで，  
 [プロファイル結果](https://raw.githubusercontent.com/handai-trema/cbench-k-tsuji/master/profile_cbench.txt)
 を取得した．  
