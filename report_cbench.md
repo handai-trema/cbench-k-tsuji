@@ -18,11 +18,11 @@ Branch:     Master
 ###① Cbenchの起動およびプロファイリング  
 まず，端末１上でcbench-k-tsujiリポジトリにおいて，  
 ```
-ruby -r profile ./bin/trema run ./lib/cbench.rb > profile_cbench.txt
+ruby -r profile ./bin/trema run ./lib/cbench.rb &> profile_cbench.txt
 ```  
-によりtremaの実行全体のプロファイルを取りつつ，  
-tremaを起動させる．  
+によりtremaの実行全体のプロファイルを取りつつ，tremaを起動させる．  
 このとき，出力結果を`profile_cbench.txt`に書き出すように設定した．  
+そして，tremaによる出力はエラー出力扱いであることが判明した．  
 
 ###② ベンチマークテストの実施  
 次に，他の端末において，  
@@ -43,12 +43,17 @@ control + C
 
 
 ##結果と考察
-上記のように得た
+<P>上記のように得た
 [プロファイル結果](https://raw.githubusercontent.com/handai-trema/cbench-k-tsuji/master/profile_cbench.txt)
-より，  
-IO.selectにかかる時間[%]が最も長いため，  
-IO.selectがボトルネックであると考察する.  
+より，IO.selectにかかる時間[%]が最も長いため，IO.selectがボトルネックであると考察する.  </P>
 
+<P>ちなみに，IO.selectとは下に示すメソッドである．</P>
+<b>入力:</B> 入力/出力/例外待ちのIOオブジェクト  
+<b>出力:</B> 準備ができた順番の配列  
+<b>使われ方:</B> 主に，TCPコネクションの打ち切りの際  
+>参考：  
+> * [Ruby 2.3.0 リファレンスマニュアル - IO.select](https://docs.ruby-lang.org/ja/latest/method/IO/s/select.html)
+> * [RubyのIO.select を使って、TCP socketで返信がなくなったら自動でコネクションをきる方法](http://portaltan.hatenablog.com/entry/2015/07/28/154113)
 
 
 
