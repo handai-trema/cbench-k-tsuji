@@ -1,16 +1,19 @@
 #Report: cbench
 Submission: Oct./12/2016  
+Branch:     Master  
+
 
 ##提出者
 辻　健太  
 33E16012  
 長谷川研究室 所属  
 
+
+
 ##手法
 下記の３つの操作を行うことで，  
-プロファイル（
-[プロファイル結果はこちら] (https://raw.githubusercontent.com/handai-trema/cbench-k-tsuji/master/profile_cbench.txt)
-）を取得した．  
+[プロファイル結果](https://raw.githubusercontent.com/handai-trema/cbench-k-tsuji/master/profile_cbench.txt)
+を取得した．  
 
 ###① Cbenchの起動およびプロファイリング  
 まず，端末１上でcbench-k-tsujiリポジトリにおいて，  
@@ -37,15 +40,18 @@ control + C
 そして，同ディレクトリに`profile_cbench.txt`（
 [プロファイル結果はこちら] (https://raw.githubusercontent.com/handai-trema/cbench-k-tsuji/master/profile_cbench.txt)
 ）としてプロファイル結果を得た．  
-  
+
 
 ##結果と考察
-上記のように得たプロファイル結果（
-[プロファイル結果はこちら] (https://raw.githubusercontent.com/handai-trema/cbench-k-tsuji/master/profile_cbench.txt)
-）より，  
+上記のように得た
+[プロファイル結果](https://raw.githubusercontent.com/handai-trema/cbench-k-tsuji/master/profile_cbench.txt)
+より，  
 IO.selectにかかる時間[%]が最も長いため，  
 IO.selectがボトルネックであると考察する.  
 
 
+
+
+
 ##関連リンク
-* [Result of profile] (https://raw.githubusercontent.com/handai-trema/cbench-k-tsuji/master/profile_cbench.txt)
+* [プロファイル結果] (https://raw.githubusercontent.com/handai-trema/cbench-k-tsuji/master/profile_cbench.txt)
