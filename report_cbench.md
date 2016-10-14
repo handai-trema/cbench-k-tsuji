@@ -37,9 +37,10 @@ ruby -r profile ./bin/trema run ./lib/cbench.rb &> profile_cbench.txt
 control + C
 ```  
 を入力することでCbenchを終了した．  
-そして，同ディレクトリに`profile_cbench.txt`（
-[プロファイル結果はこちら] (https://raw.githubusercontent.com/handai-trema/cbench-k-tsuji/master/profile_cbench.txt)
-）としてプロファイル結果を得た．  
+そして，同ディレクトリに
+[profile_cbench.txt]
+(https://raw.githubusercontent.com/handai-trema/cbench-k-tsuji/master/profile_cbench.txt)
+としてプロファイル結果を得た．  
 
 
 ##結果と考察
