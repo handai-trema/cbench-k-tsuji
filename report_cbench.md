@@ -44,11 +44,11 @@ control + C
 
 
 ##結果と考察
-<P>上記のように得た
+上記のように得た
 [プロファイル結果](https://raw.githubusercontent.com/handai-trema/cbench-k-tsuji/master/profile_cbench.txt)
-より，IO.selectにかかる時間[%]が最も長いため，IO.selectがボトルネックであると考察する.  </P>
+より，IO.selectにかかる時間[%]が最も長いため，IO.selectがボトルネックであると考察する.  
 
-<P>ちなみに，IO.selectとは下に示すメソッドである．</P>
+ちなみに，IO.selectとは下に示すメソッドである．  
 <b>入力:</B> 入力/出力/例外待ちのIOオブジェクト  
 <b>出力:</B> 準備ができた順番の配列  
 <b>使われ方:</B> 主に，TCPコネクションの打ち切りの際  
